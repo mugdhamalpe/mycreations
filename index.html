@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Creations</title>
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="css/fixed.css">
+	<script type="text/javascript" src="main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script src="js/main2.js"></script>
+	<style>
+		.column{
+			text-align: center;
+		}
+		.row{
+			text-align: center;
+		}
+		
+		/*body {
+			background-image: url('img/gradient.png');
+			background-repeat: none;
+
+		}*/
+	</style>
+</head>
+
+<body>
+
+	<div class="loader_bg">
+		<div class="loader"></div>
+	</div>
+
+	<section id ="nav-bar">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container-fluid">
+			  <a class="navbar-brand"><img src="img/logonew1.jpeg"></a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+					<a class="nav-link" aria-current="page" href="index.html">Home</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#paintings">Art Gallery</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#poetries">Poetry Section</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#inspiration">Inspiration</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		</nav>
+	</section>
+
+		<!--End of Navigation-->
+		<!--Start Landing Page Section-->
+		<div class="landing">
+			<div class="home-wrap">
+				<div class="home-inner">
+				</div>
+			</div>
+		</div>
+
+		<div class="caption text-center">
+			<h1>Welcome to My Creations</h1>
+			<h3>My Art gallery</h3>
+			<h3>Poetry Section</h3>
+			<a class="btn-new" href="#paintings">Let's Start!!</a>
+		</div>
+
+		<!--End of Landing Page Section-->
+
+	</div>
+
+	<!--End of Home Section-->
+
+	<!--Start of Paintings Section-->
+	<div id="paintings" class="offset">
+		<div class="col-12 narrow text-center">
+			<div class="heading-underline"></div>
+			<h2 class="heading">Paintings</h2>
+			<h5>There are no words to describe the feeling of creating a painting from a blank piece of paper.</h5>
+
+			<br>
+			</div>
+		</div>
+		<div class="showcase">
+			<script>
+				var i=0;
+				var images = [];
+				var time = 1500;
+			
+				//Image list
+				images[0] = 'img/img1.jpg';
+				images[1] = 'img/img2.jpeg';
+				images[2] = 'img/img3.jpeg';
+			
+				//Change Image
+				function changeImg(){
+					document.slide.src = images[i];
+			
+					if(i < images.length - 1){
+						i++;
+					} else{
+						i=0;
+					}
+			
+					setTimeout('changeImg()', time);
+				}
+			
+				window.onload = changeImg;
+			
+			</script>
+			
+			<img name="slide" width="300" height="300">
+		</div>
+		
+
+
+		<div class="col-12 narrow text-center">
+		<a class="btn-sec" href="index2.html">See more Paintings</a>
+		</div>
+		
+		
+		
+	</div>
+
+	<!--End of Paintings Section-->
+	<hr>
+
+	<!--Start of Poetries Section-->
+	<div id="poetries" class="offset">
+		<div class="col-12 narrow text-center">
+			<div class="heading-underline"></div>
+			<h1 class="heading">Poetries</h1>
+			<p><strong>A poem is a symptom of the writer's effort to make sense to the world.</strong></p>
+			<div class="text-new">
+				<div class="col-12 narrow text-center">
+					<h2>Poetry in Hindi</h2>
+					<h4>वापस लौट आते ...</h4>
+					<h5>वो यादें याद आती है,
+					<br>
+					जब हर दिन तुमसे ही शुरू होता था।
+					<br> 
+					सपनों में भी तुम ही आया करते थे ,
+					<br>
+					थोड़ा मस्कुरा के फिर चले जाते थे ...</h5>
+					<br>
+				</div>
+
+				<div class="col-12 narrow text-center">
+					<h2>Poetry in English</h2>
+					<h4>Childhood Memories</h4>
+					<h6>The memories are still engraved in my mind,
+					<br>
+					Where happiness was so clearly defined.
+					<br>
+					Reminiscent stories still fill my heart,
+					<br>
+					With every moment being a lovely piece of art.
+					<br></h6>
+				</div>
+			</div>
+			<a class="btn-sec" href="index3.html">See Full Poems</a>
+			</div>
+		</div>
+	</div>
+
+	<!--End of Poetries Section-->
+
+	<!--Start of Inspiration Section-->
+	<div id="inspiration" class="offset">
+
+		<!--Start of Jumbotron -->
+		<div class="jumbotron">
+			<div class="col-12 text-center">
+				<h3 clas="heading">The real inspiration that keeps me going!</h3>
+				<div class="heading-underline"></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 feedback">
+					<div class="row">
+						<div class="col-md-4">
+							<img src="img/picasso.jpg">
+						</div>
+						<div class="col-md-8">
+							<blockquote>
+								<i class="fas fa-quote-right"></i>
+								Learn the rules like a PRO,
+								<br> 
+								so you can break them like an ARTIST.
+								<hr class="feedback-hr">
+								<cite>&#8212; Pablo Picasso</cite>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 feedback">
+					<div class="row">
+						<div class="col-md-4">
+							<img src="img/Vinci.jpg">
+						</div>
+						<div class="col-md-8">
+							<blockquote>
+								<i class="fas fa-quote-right"></i>
+								Painting is a Poetry which is seen and not heard,
+								<br>
+								&
+								<br>
+								Poetry is a Painting which is heard but not seen.
+								<hr class="feedback-hr">
+								<cite>&#8212; Leonardo Da Vinci</cite>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 feedback">
+					<div class="row">
+						<div class="col-md-4">
+							<img src="img/hussainnew.jpg">
+						</div>
+						<div class="col-md-8">
+							<blockquote>
+								<i class="fas fa-quote-right"></i>
+								I only give expression to the instincts from my SOUL.
+								<hr class="feedback-hr">
+								<cite>&#8212; M.F. Hussain</cite>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+			</div><!--End of row-->
+		</div><!--End of jumbotron-->
+		
+	</div>
+
+	<!--End of Inspiration Section-->
+
+
+	<div class="col-12 narrow text-center">
+		"My creations" is a website which contains my paintings and poetries.
+		<br> Would gladly continue painting and writing some pieces of poetry!<br>
+		<h4>Thanks a lot for visiting this website :))</h4>
+	</div>
+
+	<!--Back to top wala button-->
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+	<!--Start of Contact Section-->
+	<div id="contact" class="offset">
+		<footer>
+			<div class="row justify-content-center">
+				<div class="col-md-5 text-center">
+					<img src="img/logonew1.jpeg">
+					<p>
+						The images in the background are attributed to &copy; PicsArt<br>
+						Photos of renowned personalities are from web sources.
+					</p>
+					<strong><h4>Contact Info</h4></strong>
+					<p><h6>mugdha.malpe04@gmail.com</h6></p>
+					<a href="https://www.instagram.com/_mugdhamalpe_/" target="_blank"><i class="fab fa-instagram"></i></a> <!--insta-->
+					<a href="https://www.linkedin.com/in/mugdha-malpe-421147213/" target="_blank"><i class="fab fa-linkedin"></i></a> <!--linked In-->
+					
+				</div>
+
+				<hr class="socket"> 
+				&copy; My Creations <br> Made with ❤ by Mugdha Malpe
+
+			</div>
+		</footer>
+		
+	</div>
+
+	<!--End of Contact Section-->
+
+
+
+<!--- Script Source Files -->
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<!--- End of Script Source Files -->
+<script src="https://cdjns.cloudfare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		setTimeout(function(){
+			$('.loader_bg').fadeToggle();
+		}, 1500);
+	</script>
+</body>
+</html>
+
+
+
+
+<!--- Check out my courses! -->
+
+<!-- <div class="udemy-course" style="position: fixed; bottom: 0; right: 0; margin-bottom: -5px; z-index: 100;"> 
+	<a href="https://w3newbie.com/courses" target="_blank" style="z-index: 999!important; cursor: pointer!important;"><img src="https://www.w3newbie.com/wp-content/uploads/nuno-course-banner.png" style="max-width: 100%; min-width: 100%;"></a>
+</div>
+
+<input type="submit" name="submit" value="Submit" text-align="center">
+
+
+<div class="fixed-background">
+			<div class="row dark text-center">
+				<div class="col-12 text-center">
+					<h3 class="heading">Real inspiration to keep me going!</h3>
+					<div class="heading-underline"></div>
+				</div>
